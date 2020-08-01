@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{F130AA28-492E-26B8-1E0B-15B94A10E7F0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MovingScript.cs">
+    <Files>
+      <File FileName="Assets/Script/MovingScript.cs" Line="79" Column="19" IsPinned="True" />
+      <File FileName="Assets/Script/PauseMenu.cs" />
+      <File FileName="Assets/Script/Restart.cs" />
+      <File FileName="Assets/Script/ScoreScript.cs" />
+      <File FileName="Assets/Script/GameOverScore.cs" />
+      <File FileName="Assets/Script/CameraController.cs" />
+      <File FileName="Assets/Script/Generator.cs" />
+      <File FileName="Assets/Script/MovingPlatform.cs" />
+      <File FileName="Assets/Script/PlatformCollider.cs" />
+      <File FileName="Assets/Script/PlatformDestroyer.cs" />
+      <File FileName="Assets/Script/YMovingScript.cs" />
+      <File FileName="Assets/MoveScript.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Jumping Ball" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="MovingScript.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f64cddcf-d597-41e6-8dea-4fdff42a40f7" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
