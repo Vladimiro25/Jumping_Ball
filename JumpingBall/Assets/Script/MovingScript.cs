@@ -10,18 +10,16 @@ public class MovingScript : MonoBehaviour
     
     public float JumpVelocity;
 
-    //public float speed;
-
-    private float _MaxYposition;
+    private float MaxYposition;
 
     public Image BlackImage;
 
     public GameObject GameOverUI;
     public static bool GameIsOver = false;
 
-    public float xMove = 5f;
+    public float Xmove = 5f;
 
-    private int mult;
+    
     private void Start()
     {
         if (Move == null)
@@ -39,7 +37,7 @@ public class MovingScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        OnMouseDrag();
+        MoveBall();
 
         if (transform.position.x > 6f)
         {
@@ -51,42 +49,40 @@ public class MovingScript : MonoBehaviour
         }
 
 
-        if (transform.position.y > _MaxYposition)
+        if (transform.position.y > MaxYposition)
         {
-            _MaxYposition = transform.position.y;
+            MaxYposition = transform.position.y;
         }
 
 
-        if (transform.position.y < _MaxYposition - 11f)
+        if (transform.position.y < MaxYposition - 11f)
         {
             GameOver();
         }
     }
 
-    private void OnMouseDrag()
+    private void MoveBall()
     {
-        Vector3 MoveDirection = Vector3.zero;
-        int mult = 0;
-        if (Input.touchCount>0)
+        if (Input.GetMouseButton(0) == false)
         {
-            Touch MyTouch = Input.GetTouch(0);
-            if (MyTouch.phase == TouchPhase.Moved)
-            {
-                Vector3 positionChange = MyTouch.deltaPosition;
-                positionChange.y = -positionChange.y;
-                MoveDirection = positionChange.normalized;
+            return;
+        }
+        
+        int multiplayer = 0;
+        if (Input.GetMouseButton(0))
+        {
 
-                //if (MyTouch.position.x < Screen.width / 2)
-                //{
-                //    mult = -1;
-                //}
-                //else
-                //{
-                //    mult = 1;
-                //}
+            Vector3 touch = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+            if (Input.mousePosition.x < Screen.width / 2)
+            {
+                multiplayer = -1;
+            }
+            else
+            {
+                multiplayer = 1;
             }
         }
-        transform.position += MoveDirection * xMove * Time.deltaTime;
+        BallMove.velocity = new Vector3(multiplayer * Xmove, BallMove.velocity.y, 0);
     }
     public void StopMove()
     {
@@ -100,15 +96,8 @@ public class MovingScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
-        if (gameObject.name.Equals("PlatformDestroyer"))
-        {
-            BallMove.velocity = new Vector3(BallMove.velocity.x, 0f, 0f);
-        }
-        else
-        {
-            BallMove.velocity = new Vector3(BallMove.velocity.x, JumpVelocity, 0f);
-        }
+        
+        BallMove.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
     }
    
 

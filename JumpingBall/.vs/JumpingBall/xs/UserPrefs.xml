@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{A6546A24-EBF4-5C79-1752-7ED8D58BD891}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/YMovingScript.cs">
     <Files>
-      <File FileName="Assets/Script/CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/GameOverScore.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/GameOverScore.cs" Line="11" Column="25" />
       <File FileName="Assets/Script/Generator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/MoveScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/MovingPlatform.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/MovingScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/PlatformCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/MovingScript.cs" Line="85" Column="57" />
+      <File FileName="Assets/Script/PauseMenu.cs" Line="7" Column="11" />
+      <File FileName="Assets/Script/PlatformCollider.cs" Line="10" Column="13" />
       <File FileName="Assets/Script/PlatformDestroyer.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/PlayScene.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Restart.cs" Line="1" Column="1" />
@@ -31,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="179f44b8-4edd-44c3-83c4-251f411c077f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="315dee83-b878-4b9d-a046-5cb5ac1c7785" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

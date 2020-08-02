@@ -66,7 +66,6 @@
     <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Script\GameOverScore.cs" />
     <Compile Include="Assets\Script\Generator.cs" />
-    <Compile Include="Assets\Script\MoveScript.cs" />
     <Compile Include="Assets\Script\MovingPlatform.cs" />
     <Compile Include="Assets\Script\MovingScript.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />

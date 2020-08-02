@@ -298,7 +298,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 841fd7e3c7b9508ea990cc29c4ca2c3d
+      Hash: a9135f36ba286eb2006e79900437c632
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformCollider
@@ -520,12 +520,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 8ba59b62bed17944239f60b375062028
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveScript
-  - hash:
-      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -586,7 +580,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 4bdc564f78f2a4b7815d25287e92ea29
+      Hash: bd1dc11a9defa2f2966515e401d7872d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovingScript
